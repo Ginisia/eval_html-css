@@ -1,10 +1,24 @@
 body{
     font-family: $font_base;
 }
-
 .wrapper{
-    width: 1140px;
+    margin: 0 auto;
+    max-width: 1140px;
 }
+
+/*Font style*/
+h1{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/*remove stylisation (li, a..)*/
 
 li{
     list-style: none;
@@ -12,4 +26,22 @@ li{
 
 a{
     text-decoration: none;
+}
+
+input, textarea {
+    outline: none;
+    border: 2px solid lightgray;
+    height: 20px;
+    padding: 20px;
+    color: $color-txt;
+    font-size: .9rem;
+}
+
+/*Specific icons*/
+.socials i{
+    padding-left: 1rem;
+    transition: .3s all ease-in-out;
+    &:hover {
+        color: $color-yellow;
+    }
 }

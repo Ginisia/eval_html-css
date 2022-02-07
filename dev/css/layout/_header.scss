@@ -1,0 +1,34 @@
+.header{
+    position: relative;
+    width: 100%;
+    color: white;
+    a{
+        color: white;
+    }
+}
+
+.head-home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .header-txt{
+        width: 600px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        top: 40%;
+    }
+}
+
+.head-contact{
+    width: 100%;
+    height: 25vh;
+    background-image: url(../img/hero-contact.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
