@@ -201,7 +201,7 @@ li{
 /////////REQUEST in General !
 
 /////////BLOG
-.blog{
+.home .blog{
     padding-bottom: 10rem;
     h4, p, span{
         margin: 1rem;
@@ -253,10 +253,6 @@ li{
 }
 }
 
-.blog h4:hover{
-    cursor: pointer;
-    color: $color-yellow;
-}
 
 
 

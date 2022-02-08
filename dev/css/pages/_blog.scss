@@ -1,4 +1,235 @@
+///Structure principale
+
 .blog main{
     background-color: $color-bg;
-
+    h4{
+        text-align: center;
+    }
 }
+
+.blog main .wrapper{
+    padding-top: 3rem;
+    display: flex;
+    gap: 2rem;
+    p{
+        color: grey;
+        line-height: 1.5rem;
+        font-size: .9rem;
+    }
+}
+.blog section, aside{
+    i{
+        color: black;
+    }
+}
+
+////SECTION
+.blog section{
+    width: 70%;
+    padding: 1rem;
+}
+
+/////----Article astro
+.blog .img-astro{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}
+
+.astronomy .txt-2col{
+    display: flex;
+    gap: 1.5rem;
+    line-height: 1.5rem;
+    .info{
+        width: 20%;
+        text-align: right;
+    }
+    .contenu-article{
+        width: 80%;
+    }
+}
+
+/////----div text bg white
+
+.txt-inter{
+    background: white;
+    padding: 1rem;
+}
+
+/////------Article 2 square img
+.article-suite{
+    padding: 2rem 0;
+}
+.article-suite .square-imgs{
+    display: flex;
+    gap: 2rem;
+}
+
+/////----div Prev/Next 
+
+.prev-next{
+    padding: 2rem 0;
+    border-top: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    .avatar{
+        display: block;
+        margin: 0 auto;
+        width: 60px;
+        height: 60px;
+        overflow:hidden;
+        background-size: contain;
+        &:nth-of-type(1){
+            background-image: url(../img/blog/prev.jpg);
+        }
+        &:nth-of-type(2){
+            background-image: url(../img/blog/next.jpg);
+        }
+    }
+}
+
+.prev, .next{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+////----Article Comm
+
+.comments{
+    border: 1px solid lightgray;
+    padding: 2rem;
+    .solo-comment{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .avatar{
+        display: block;
+        margin: 0;
+        width: 60px;
+        height: 60px;
+        overflow:hidden;
+        background-size: contain;
+        &:nth-of-type(1){
+            background-image: url(../img/blog/prev.jpg);
+        }
+        &:nth-of-type(2){
+            background-image: url(../img/blog/next.jpg);
+        }
+    }
+}
+
+/////-------Article leave a comment
+.leave-com{
+    margin: 2rem 0;
+    padding-bottom: 2rem;
+    border: 1px solid lightgray;
+    form{
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        input, textarea{
+            border: none;
+        }
+    }
+}
+.leave-com textarea{
+    height: 8rem;
+}
+.leave-com .btn{
+    display: flex;
+    justify-content: center;
+}
+.leave-com .name-mail{
+    display: flex;
+    justify-content: space-between;
+    input{
+        width: 45%;
+    }
+}
+
+////ASIDE
+.blog aside{
+    width: 30%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    span{
+        font-size: .9rem;
+        color: lightgrey;
+    }
+    .search-space{
+        border-radius: 20px;
+        background-color: $color-yellow;
+        border: none;
+        &::placeholder{
+            color: white;
+        }
+    }
+}
+
+aside .present{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .avatar{
+        display: block;
+        margin: 0 auto;
+        width: 80px;
+        height: 80px;
+        overflow:hidden;
+        background-image: url(../img/blog/user-info.png);
+        background-size: contain;
+    }
+    .socials{
+        padding-top: 1rem;
+    }
+}
+
+aside .title-post{
+    padding: 15px;
+    text-align: center;
+    background-color: $color-yellow;
+    color: white;
+    h5{font-size: 1.1rem;}
+}
+
+////Article Popular post ------
+.pop-posts .solo-post-pres{
+    display: flex;
+    gap: 1rem;
+    .item-post{
+        width: 40%;
+        background-image: url(../img/blog/pp1.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .title-mini-post{
+        width: 60%;
+    }
+}
+.pop-posts h6{
+    margin-bottom: 0;
+}
+///Article Cat posts ------
+
+.cat .list-cat{
+    display: flex;
+    flex-direction: column;
+    a{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
