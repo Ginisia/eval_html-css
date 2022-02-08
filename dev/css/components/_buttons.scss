@@ -1,6 +1,6 @@
 .btn-yellow {
     width: 150px;
-    padding: 15px;
+    padding: 10px 30px;
     text-align: center;
     background-color: $color-yellow;
     font-weight: 400;
@@ -15,5 +15,65 @@
     transition: .3s all ease-in-out;
     &:hover {
         background-color: $color-txt;
+    }
+}
+.btn-yellow2 {
+    position: absolute;
+    width: 100px;
+    padding: 10px 30px;
+    text-align: center;
+    background-color: $color-yellow;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $color-txt;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+}
+
+.btn-price {
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    background-color: $color-purp2;
+    border: 1px solid $color-purp;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+    &:hover {
+        background-color: $color-yellow;
+        color: white;
+    }
+}
+
+.btn-black {
+    margin-top: 2rem;
+    width: 250px;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    background-color: $color-txt;
+    font-weight: 400;
+    font-size: .9rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 5;
+    a{
+        color: white;
+    }
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+    &:hover {
+        background-color: $color-yellow;
+        
     }
 }

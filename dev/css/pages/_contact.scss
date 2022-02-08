@@ -6,11 +6,14 @@
 .contact-container{
     display: grid;
     gap: 3rem;
-    height: 400px;
-    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    width: 100%;
     padding: 100px 0;
     p{
         margin: 0;
+    }
+    .btn{
+        grid-column-end: 4;
     }
 }
 
@@ -31,11 +34,14 @@
     }
 }
 
-
-form .col-left{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.form-left{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+}
+.msg textarea{
+    width: 100%;
+    height: 100%;
 }
 
 .info-contact i{

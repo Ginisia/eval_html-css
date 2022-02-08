@@ -17,9 +17,17 @@ h2{
     font-weight: 300;
     letter-spacing: 2px;
 }
+h4{
+    letter-spacing: .1rem;
+    margin-top: 40px;
+    margin-bottom: 0;
+    
+}
 
 /*remove stylisation (li, a..)*/
-
+ul{
+    padding: 0;
+}
 li{
     list-style: none;
 }
@@ -43,5 +51,54 @@ input, textarea {
     transition: .3s all ease-in-out;
     &:hover {
         color: $color-yellow;
+    }
+}
+
+
+/*Repetitions (section, titles, text-design..)*/
+////SECTIONS
+
+section .wrapper{
+    padding-top: 80px;
+    padding-bottom: 100px;
+    height: 100%;
+    
+}
+///////Request
+.request{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.txt-left{
+    margin: 0 100px;
+    width: 50%;
+    
+    h3{
+        font-size: 1.6rem;
+    }
+    p{
+        padding-bottom: 1rem;
+        color: grey;
+    }
+}
+.img-right{
+    width: 100%;
+    img{
+        max-width: 100%;
+    }
+}
+////Title
+.title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 3rem;
+    h3{
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+    p{
+        color: $color-txt;
     }
 }
