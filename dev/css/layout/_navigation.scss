@@ -1,5 +1,7 @@
 .nav-first{
     display: flex;
+    position: relative;
+    z-index: 11;
     justify-content: space-between;
     padding: 1rem;
     .links-left a{
@@ -15,6 +17,8 @@
     display: flex;
     justify-content: space-between;
     background:rgba(255, 255, 255, 0.3);
+    position: relative;
+    z-index: 11;
     align-items: center;
     padding: 1rem;
     a{
@@ -34,10 +38,10 @@
 .window-coucou{
     position: fixed;
     padding: 2rem;
-    width: 30%;
     left: 0;
     top: 0;
     z-index: 13;
+    width: 50%;
     height: 100vh;
     line-height: 2.3rem;
     background:black;
@@ -49,21 +53,24 @@
         transform: translateX(0);
     }
 }
+.menu-nav-coucou{
+    display: flex;
+    flex-direction: column;
+    a{
+        text-transform: uppercase;
+        &:hover{
+                color: $color-yellow;
+        }
+    }
+}
+
 //////BURRGEEEEEERRRRRRRRRAAAAAHHHHH////
 @media screen and (max-width:990px){
-    .window-coucou{
-        width: 50%;
-    }
+
     .menu-nav{
         display: none;
     }
-    .menu-nav-coucou{
-        display: flex;
-        flex-direction: column;
-        a:hover{
-            color: $color-yellow;
-        }
-    }
+    
     .burger-menu {
         width: 2.5rem;
         height: 2.5rem;
@@ -93,9 +100,7 @@
     .barre3{
         top: 70%;
     }
-    .menu-nav-coucou a{
-        text-transform: uppercase;
-    }
+    
 }
 
 

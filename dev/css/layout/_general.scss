@@ -1,9 +1,16 @@
 body{
     font-family: $font_base;
+    width: 100%;
 }
 .wrapper{
     margin: 0 auto;
     max-width: 1140px;
+    width: 100%;
+    height: 100%;
+}
+.wrapper2{
+    margin: 0 auto;
+    max-width: 768px;
     width: 100%;
     height: 100%;
 }
@@ -72,14 +79,13 @@ section .wrapper{
     padding-top: 80px;
     padding-bottom: 100px;
     height: 100%;
-    
 }
 ///////Request
 .request{
     display: flex;
     justify-content: center;
     width: 100%;
-    @media screen and (max-width:768px){
+    @media screen and (max-width:1140px){
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -100,11 +106,8 @@ section .wrapper{
         color: grey;
     }
 }
-.img-right{
+img{
     width: 100%;
-    img{
-        max-width: 100%;
-    }
 }
 ////Title
 .title{
@@ -120,3 +123,5 @@ section .wrapper{
         color: $color-txt;
     }
 }
+
+

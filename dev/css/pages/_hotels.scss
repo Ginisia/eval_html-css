@@ -1,5 +1,8 @@
 .hotels main{
     padding-bottom: 100px;
+    @media screen and (max-width:1140px){
+        padding-bottom: 0;
+    }
 }
 
 .hotels .popular{
@@ -11,6 +14,12 @@
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    max-width: 100%;
+    width: 100%;
+    @media screen and (max-width:1140px){
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .contain-dest{
@@ -19,6 +28,10 @@
     flex-direction: column;
     justify-content: center;
     transition: all .3s ease-in-out;
+    width: 100%;
+    img{
+        width: 100%;
+    }
     .txt-prices{
         padding: 2rem;
     }

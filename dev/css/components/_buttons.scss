@@ -53,6 +53,9 @@
         color: white;
     }
 }
+.reply-mode{
+    background-color: #fff;
+}
 
 .btn-black {
     margin-top: 2rem;
@@ -97,3 +100,11 @@
     }
 }
 }
+
+.yellow-link{
+    color: grey;
+&:hover{
+    color: $color-yellow;
+}
+}
+
