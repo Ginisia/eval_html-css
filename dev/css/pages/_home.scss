@@ -6,6 +6,11 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
     grid-auto-rows: calc(200px + 1vw);
+    height: 100%;
+    @media screen and (max-width:768px){
+        grid-template-columns: none;
+        grid-auto-rows: 360px;
+    }
     .destination-img{
         position: relative;
         max-width: 100%;
@@ -13,6 +18,7 @@
         height: 100%;
         background-position: center;
         background-size: cover;
+        background-repeat: no-repeat;
         transition: all .6s ease-in-out;
         &:after{
             content: '';
@@ -69,20 +75,29 @@
 //////////////SECTION PRICE
 .prices{
     background: url(../img/price-bg.png) center/cover no-repeat;
+    width: 100%;
 }
 
 .packages{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 8rem;
-    width: 100%;
+    gap: 2rem;
+    max-width: 100%;
+    @media screen and (max-width:768px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .package-container{
     display: grid;
-    padding: 0 3rem;
-    width: 100%;
+    padding: 0 20px;
     text-align: center;
     background-color: white;
+    width: 100%;
+    @media screen and (max-width:768px){
+        width: 80%;
+    }
     ul{
         border-top: 1px solid $color-yellow;
     }
@@ -98,6 +113,11 @@ li{
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     justify-content: center;
+    @media screen and (max-width:768px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 
@@ -107,6 +127,11 @@ li{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+    @media screen and (max-width:768px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .other a{
     color: $color-txt;
@@ -129,11 +154,11 @@ li{
         }
     }
 }
-.request .img-in{
+.issues-container .img-in{
     overflow: hidden;
 }
 .issues-container:hover img{
-    transform: scale(1.1);
+    transform: scale(1.1) rotate(0.01turn);
 }
 
 
@@ -143,6 +168,7 @@ li{
 
 .testimonial{
     background-color: $color-bg;
+    width: 100%;
 }
 
 .bloc-2reviews{
@@ -150,10 +176,19 @@ li{
     justify-content: center;
     grid-template-columns: repeat(2,1fr);
     gap: 2rem;
+    max-width: 100%;
+    @media screen and (max-width:768px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .review-solo:nth-of-type(2){
+            display: none;
+        }
+    }
     .review-solo{
         display: flex;
         align-items: start;
-        padding: 2rem;
+        padding: 1rem;
         background-color: #fff;
         .stars-review{
             padding-top: 1rem;
@@ -172,7 +207,7 @@ li{
 }
 .review-solo .txt-review{
     padding-left: 1rem;
-    width: 450px;
+    width: 100%;
 }
 
 .review-solo p{

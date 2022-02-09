@@ -11,6 +11,11 @@
     padding-top: 3rem;
     display: flex;
     gap: 2rem;
+    @media screen and (max-width:1170px){
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     p{
         color: grey;
         line-height: 1.5rem;
@@ -52,6 +57,14 @@
     }
 }
 
+.astronomy a{
+    color: $color-txt;
+    transition: .3s ease-in-out;
+    &:hover{
+        color: $color-yellow;
+    }
+}
+
 /////----div text bg white
 
 .txt-inter{
@@ -62,10 +75,12 @@
 /////------Article 2 square img
 .article-suite{
     padding: 2rem 0;
+    width: 100%;
 }
 .article-suite .square-imgs{
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+    width: 100%;
 }
 
 /////----div Prev/Next 
@@ -156,23 +171,45 @@
 ////ASIDE
 .blog aside{
     width: 30%;
+    height: 2000px;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    border: 1px solid lightgrey;
+    @media screen and (max-width:1170px){
+        width: 100%;
+        border: none;
+    }
     span{
         font-size: .9rem;
         color: lightgrey;
     }
-    .search-space{
-        border-radius: 20px;
-        background-color: $color-yellow;
-        border: none;
-        &::placeholder{
+}
+
+aside .searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    i{
+    position: relative;
+    color: white;
+    left: -30px;
+    }
+}
+aside .search-space{
+    display: flex;
+    width: 60%;
+    border-radius: 20px;
+    background-color: $color-yellow;
+    border: none;
+    &::placeholder{
             color: white;
         }
     }
-}
+
+
 
 aside .present{
     margin-top: 2rem;
@@ -196,7 +233,7 @@ aside .present{
 }
 
 aside .title-post{
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     background-color: $color-yellow;
     color: white;
@@ -229,7 +266,39 @@ aside .title-post{
     a{
         display: flex;
         justify-content: space-between;
+        height: 3rem;
+        &:hover{
+            border-bottom: 1px dotted $color-yellow;
+        }
     }
+}
+
+/////subscribe input
+
+.newslet .input-news{
+    display: flex;
+    width: 100%;
+    position: relative;
+    input{
+        width: 60%;
+    }
+    input::placeholder{
+        color: lightgrey;
+        text-align: center;
+    }
+    .btn-yellow{
+        display: flex;
+        width: 40%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.input-news i{
+    position: absolute;
+    color: lightgrey;
+    margin-top: .8rem;
+    margin-left: .5rem;
 }
 
 

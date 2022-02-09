@@ -77,3 +77,23 @@
         
     }
 }
+
+.tag-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1rem;
+.btn-tag {
+    border: 1px solid lightgray;
+    padding: 0.6rem;
+    color: grey;
+    font-weight: 400;
+    background-color: #fff;
+    font-size: .8rem;
+    &:hover{
+        background-color: $color-yellow;
+        color: white;
+        border: 1px solid $color-yellow;
+    }
+}
+}

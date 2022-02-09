@@ -70,6 +70,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width:1170px){
+        padding: 2rem 0;
+    }
+    @media screen and (max-width:768px){
+        flex-direction: column;
+    }
 }
 .copyright a{
     color: $color-yellow;

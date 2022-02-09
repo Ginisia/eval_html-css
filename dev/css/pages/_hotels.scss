@@ -1,0 +1,47 @@
+.hotels main{
+    padding-bottom: 100px;
+}
+
+.hotels .popular{
+    background-color: $color-bg;
+}
+
+.destinations{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.contain-dest{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+    .txt-prices{
+        padding: 2rem;
+    }
+    .title-stars{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h4{
+            margin-top: 0;
+        }
+    }
+}
+.contain-dest .btn-yellow{
+    width: 100px;
+}
+
+.contain-dest:hover{
+    box-shadow: 0rem 0rem 1.5rem rgba(0, 0, 0, .5);
+}
+
+.contain-dest .stars-review i{
+    color: $color-yellow;
+    &:last-child{
+        color: $color-txt;
+    }
+}

@@ -19,24 +19,41 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        position: absolute;
         justify-content: center;
         top: 40%;
+        @media screen and (max-width:1180px){
+            padding-left: 1rem;
+        }
     }
+}
+.header-txt2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-contact, .head-blog, .head-hotel{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 50vh;
 }
 
 .head-contact{
-    width: 100%;
-    height: 30vh;
     background-image: url(../img/hero-contact.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .head-blog{
-    width: 100%;
-    height: 30vh;
     background-image: url(../img/hero-blog.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
 }
+
+.head-hotel{
+    background-image: url(../img/hero-hotels.jpg);
+}
+
+// 1180
+// 768
