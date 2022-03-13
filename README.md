@@ -5,7 +5,7 @@ Lien vers le site : https://ginisia.github.io/eval_html-css/prod/
 # Travelista
 
 + Agence de voyage fictive
-+ Réalisé solo / en 3 jours.
++ Réalisé solo / en 3 jours (Exam).
 
 ## Langages utilisés
 
