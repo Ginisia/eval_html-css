@@ -2,7 +2,7 @@
 
 Lien vers le site : https://ginisia.github.io/eval_html-css/prod/
 
-# Travelista
+# Travelista 🐠
 
 + Agence de voyage fictive
 + Réalisé solo / en 3 jours (Exam).
@@ -16,3 +16,5 @@ Lien vers le site : https://ginisia.github.io/eval_html-css/prod/
 ## Responsive
 
 Oui.
+
+
